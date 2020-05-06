@@ -1,0 +1,13 @@
+#! /usr/bin/python3
+
+import fileinput
+
+stripchar = "…"
+rez = ""
+for line in fileinput.input():
+    if len(line) > 30:
+        rez += line[:14] + stripchar + line[-15:]
+    else:
+        rez += line
+
+print(rez)

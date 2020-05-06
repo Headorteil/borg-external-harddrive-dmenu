@@ -1,0 +1,9 @@
+#!/bin/sh
+case $BLOCK_BUTTON in
+        1) pgrep -x dunst >/dev/null && notify-send "Current status" "$(tail -n5 -q /tmp/borg_log | ellipsize)" ;;
+        3) pgrep -x dunst >/dev/null && notify-send " " "🔒 Borg update is running" ;;
+esac
+
+if [ -f "/tmp/borg_log" ]; then
+  echo "🔒 🔃"
+fi
