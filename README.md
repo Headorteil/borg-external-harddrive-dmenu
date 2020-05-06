@@ -4,6 +4,7 @@ This is a script which use dmenu to perform backups with an external harddrive, 
 
 I use Hack font for dmenu, so if you don't have it, simply change it.
 I also use dunst as notify manager.
+You have to export SUDO_ASKPASS="path/to/dmenupass" (in your .profile for example) to have sudo -A working
 
 You would also have to change "path to autobackup.sh" to the real path where you put this script.
 
