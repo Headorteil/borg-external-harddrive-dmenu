@@ -1,6 +1,6 @@
 # borg external harddrive dmenu
 
-This is a script which use dmenu to perform backups with an external harddrive, you can use it with the tiny i3blocks I provide here.
+This is a script which use dmenu to perform backups with an external harddrive, you can use it with the tiny i3blocks script I provide here.
 
 I use Hack font for dmenu, so if you don't have it, simply change it.
 I also use dunst as notify manager.
